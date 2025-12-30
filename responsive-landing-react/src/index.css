@@ -9,7 +9,6 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,7 +17,6 @@ body {
   color: white;
 }
 
-/* Hero */
 .hero {
   background: #3b82f6;
   color: white;
@@ -26,7 +24,6 @@ body {
   text-align: center;
 }
 
-/* Features - Grid */
 .features {
   display: grid;
   grid-template-columns: 1fr;
@@ -41,7 +38,6 @@ body {
   text-align: center;
 }
 
-/* Signup */
 .signup {
   padding: 20px;
   text-align: center;
@@ -58,7 +54,7 @@ body {
   padding: 10px;
 }
 
-/* Footer */
+
 footer {
   background: #1e293b;
   color: white;
@@ -66,14 +62,13 @@ footer {
   padding: 10px;
 }
 
-/* Tablet */
+
 @media (min-width: 600px) {
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop */
 @media (min-width: 900px) {
   .features {
     grid-template-columns: repeat(3, 1fr);

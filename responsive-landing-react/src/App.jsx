@@ -1,7 +1,6 @@
 function App() {
   return (
     <>
-      {/* Navbar */}
       <header className="navbar">
         <h2>FitLife</h2>
         <nav>
@@ -11,7 +10,6 @@ function App() {
         </nav>
       </header>
 
-      {/* Hero Section */}
       <section className="hero">
         <h1>Live a Healthier Life</h1>
         <p>FitLife helps you track workouts, diet, and progress.</p>
@@ -20,14 +18,12 @@ function App() {
         </button>
       </section>
 
-      {/* Features Section */}
       <section className="features">
         <div className="feature">🏃 Workout Tracking</div>
         <div className="feature">📊 Health Reports</div>
         <div className="feature">🥗 Diet Planner</div>
       </section>
 
-      {/* Signup Form */}
       <section className="signup">
         <h2>Sign Up Now</h2>
         <form>
@@ -37,7 +33,6 @@ function App() {
         </form>
       </section>
 
-      {/* Footer */}
       <footer>
         <p>© 2025 FitLife. All rights reserved.</p>
       </footer>

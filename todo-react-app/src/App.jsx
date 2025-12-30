@@ -4,7 +4,6 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [input, setInput] = useState("");
 
-  // Add Task
   const addTask = () => {
     if (input.trim() === "") return;
 
@@ -12,7 +11,6 @@ function App() {
     setInput("");
   };
 
-  // Toggle Complete
   const toggleTask = (index) => {
     const updatedTasks = tasks.map((task, i) =>
       i === index ? { ...task, completed: !task.completed } : task
@@ -20,7 +18,6 @@ function App() {
     setTasks(updatedTasks);
   };
 
-  // Edit Task
   const editTask = (index) => {
     const newTask = prompt("Edit Task:", tasks[index].text);
     if (newTask && newTask.trim() !== "") {
@@ -30,7 +27,6 @@ function App() {
     }
   };
 
-  // Delete Task
   const deleteTask = (index) => {
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
