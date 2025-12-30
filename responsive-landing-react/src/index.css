@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #1e293b;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background: #3b82f6;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Features - Grid */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+
+.feature {
+  background: #e5e7eb;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Signup */
+.signup {
+  padding: 20px;
+  text-align: center;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup input,
+.signup button {
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .signup form {
+    width: 40%;
+    margin: auto;
+  }
+}
